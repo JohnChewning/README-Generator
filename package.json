@@ -1,18 +1,14 @@
 {
-  "name": "readme-generator",
+  "name": "static-site",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "README-Generator"
-  },
-  "author": "JohnChewning",
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^9.2.13"
+    "inquirer": "^8.2.4"
   }
 }
