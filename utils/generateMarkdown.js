@@ -64,8 +64,8 @@ ${data.description}
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [Tests](#tests)
+- [Contribution](#contribution)
+- [Test](#test)
 - [Questions](#questions)
 - [License](#license)
 
@@ -77,13 +77,13 @@ ${data.installation}
 
 ${data.usage}
 
-## Contributing
+## Contribution
 
-${data.contributing}
+${data.contribution}
 
-## Tests
+## Test
 
-${data.tests}
+${data.test}
 
 ## Questions
 

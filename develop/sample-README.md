@@ -1,39 +1,39 @@
-# readme generator sample
+# README-Generator-Sample
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
-add a brief description
+Add a brief description of your project here.
 
 ## Table of Contents
 
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contributing](#contributing)
-- [Tests](#tests)
+- [Contribution](#contribution)
+- [Test](#test)
 - [Questions](#questions)
 - [License](#license)
 
 ## Installation
 
-installation instructions
+Add installation information here.
 
 ## Usage
 
-usage
+Add information about the usage of your application here.
 
-## Contributing
+## Contribution
 
-undefined
+Add contributions and collaborators here.
 
-## Tests
+## Test
 
-undefined
+Add test instructions here.
 
 ## Questions
 
-For any questions, please contact [username@gmail.com](mailto:username@gmail.com).
+For any questions, please contact [UserName@gmail.com](mailto:UserName@gmail.com).
 
 ## License
 
