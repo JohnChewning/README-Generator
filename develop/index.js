@@ -23,9 +23,9 @@ function init() {
       { type: "input", message: "Add the usage information of your project:", name: "usage" },
       { type: "input", message: "Add the contribution guidelines of your project:", name: "contribution" },
       { type: "input", message: "Add the test instructions of your project:", name: "test" },
-      { type: "list", message: "Select the type of license you would like for your project:", choices: ["MIT", "Apache 2.0 License", "IBM Public License Version 1.0", "Mozilla Public License 2.0", "Unlicense"], name: "license" },
-      { type: "input", message: "What is your GitHub handle?", name: "github" },
-      { type: "input", message: "What is your email?", name: "email" },
+      { type: "list", message: "Select the type of license you would like for your project:", choices: ["MIT License", "Apache 2.0 License", "IBM Public License Version 1.0", "Mozilla Public License 2.0", "Unlicense"], name: "license" },
+      { type: "input", message: "What is your GitHub username?", name: "github" },
+      { type: "input", message: "What is your email address?", name: "email" },
     ])
     .then((data) => {
       writeToFile("sample-README.md", generateMarkdown(data));

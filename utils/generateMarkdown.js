@@ -4,7 +4,7 @@ function renderLicenseBadge(license) {
     return ''; // No license, return empty string
   }
   const badgeURL = {
-    "MIT": "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
+    "MIT License": "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
     "Apache 2.0 License": "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
     "IBM Public License Version 1.0": "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/license/ibmpl-php/)",
     "Mozilla Public License 2.0": "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)",
@@ -20,7 +20,7 @@ function renderLicenseLink(license) {
   }
   
   const licenseURL = {
-    "MIT": "(https://opensource.org/licenses/MIT)",
+    "MIT License": "(https://opensource.org/licenses/MIT)",
     "Apache 2.0 License": "(https://opensource.org/licenses/Apache-2.0)",
     "IBM Public License Version 1.0": "(https://opensource.org/license/ibmpl-php/)",
     "Mozilla Public License 2.0": "(https://opensource.org/licenses/MPL-2.0)",
@@ -42,7 +42,7 @@ function renderLicenseSection(license) {
    return `
 ## License
 
-This project is licensed under the [${license} license]${renderLicenseLink(license)}.
+This project is licensed under the [${license}]${renderLicenseLink(license)}.
 `;
 }
 
@@ -67,7 +67,7 @@ ${data.description}
 - [Contributing](#contributing)
 - [Tests](#tests)
 - [Questions](#questions)
-- ${licenseLink}
+- [License](#license)
 
 ## Installation
 
