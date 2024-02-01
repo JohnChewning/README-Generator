@@ -3,9 +3,14 @@ function renderLicenseBadge(license) {
   if (!license) {
     return ''; // No license, return empty string
   }
-
-  const badgeURL = `https://img.shields.io/badge/license-${license}-brightgreen`;
-  return `![License](${badgeURL})`;
+  const badgeURL = {
+    "MIT": "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)",
+    "Apache 2.0 License": "[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)",
+    "IBM Public License Version 1.0": "[![License: IPL 1.0](https://img.shields.io/badge/License-IPL_1.0-blue.svg)](https://opensource.org/license/ibmpl-php/)",
+    "Mozilla Public License 2.0": "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)",
+    "Unlicense": "[![License: Unlicense](https://img.shields.io/badge/license-Unlicense-blue.svg)](http://unlicense.org/)"
+  }
+  return badgeURL[license];
 }
 
 // TODO: Create a function that returns the license link
@@ -13,9 +18,17 @@ function renderLicenseLink(license) {
   if (!license) {
     return ''; // No license, return empty string
   }
+  
+  const licenseURL = {
+    "MIT": "(https://opensource.org/licenses/MIT)",
+    "Apache 2.0 License": "(https://opensource.org/licenses/Apache-2.0)",
+    "IBM Public License Version 1.0": "(https://opensource.org/license/ibmpl-php/)",
+    "Mozilla Public License 2.0": "(https://opensource.org/licenses/MPL-2.0)",
+    "Unlicense": "(http://unlicense.org/)"
 
-  const licenseURL = `https://opensource.org/licenses/${license}`;
-  return `[License](${licenseURL})`;
+  }
+  
+  return licenseURL[license];
 }
 
 // TODO: Create a function that returns the license section of README
@@ -24,10 +37,12 @@ function renderLicenseSection(license) {
     return ''; // No license, return empty string
   }
 
-  return `
+  //if license exists, match link to license type
+
+   return `
 ## License
 
-This project is licensed under the [${license} license](https://opensource.org/licenses/${license}).
+This project is licensed under the [${license} license]${renderLicenseLink(license)}.
 `;
 }
 
