@@ -16,7 +16,6 @@ function init() {
   inquirer
   // TODO: Create an array of questions for user input
     .prompt([
-      { type: "input", message: "What is your name?", name: "name" },
       { type: "input", message: "What is the title of your project?", name: "title" },
       { type: "input", message: "Add the description of your project:", name: "description" },
       { type: "input", message: "Add the installation instructions of your project:", name: "installation" },
